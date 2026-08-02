@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — x_TapTap_x</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="index.html" class="nav-brand">TAPTAP</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="page-header-bg"></div>
+  <div class="page-header-grid"></div>
+  <div class="page-header-content">
+    <p class="section-label">// Contact</p>
+    <h1 class="section-title">GET IN<br><span style="color:var(--accent)">TOUCH</span></h1>
+    <p class="page-header-sub">
+      Want to say hello, ask a question, or challenge me to a 1v1? (Please don't do the last one.)
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT CONTENT -->
+<section class="contact-content">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- INFO SIDEBAR -->
+      <div>
+        <div class="contact-info-card reveal">
+          <h3>BEST WAYS TO REACH ME</h3>
+          <p>
+            I'm most active on Discord and Twitch chat. If you want a proper conversation,
+            the Discord server is the place. For everything else, the form works too — I'll
+            get back to you when I can.
+          </p>
+          <ul class="contact-methods">
+            <li class="contact-method">
+              <div class="contact-method-icon">&#128225;</div>
+              <div>
+                <div class="contact-method-label">Discord</div>
+                <div class="contact-method-value">
+                  <a href="https://discord.gg/29JPRXPQ" target="_blank">discord.gg/29JPRXPQ</a>
+                </div>
+              </div>
+            </li>
+            <li class="contact-method">
+              <div class="contact-method-icon">&#9654;</div>
+              <div>
+                <div class="contact-method-label">Twitch</div>
+                <div class="contact-method-value">
+                  <a href="https://www.twitch.tv/x_taptap_x" target="_blank">twitch.tv/x_taptap_x</a>
+                </div>
+              </div>
+            </li>
+            <li class="contact-method">
+              <div class="contact-method-icon">&#9729;</div>
+              <div>
+                <div class="contact-method-label">Bluesky</div>
+                <div class="contact-method-value">
+                  <a href="https://bsky.app/profile/xtaptapx.com" target="_blank">@xtaptapx</a>
+                </div>
+              </div>
+            </li>
+            <li class="contact-method">
+              <div class="contact-method-icon">&#9836;</div>
+              <div>
+                <div class="contact-method-label">TikTok</div>
+                <div class="contact-method-value">
+                  <a href="#" target="_blank">@x_taptap_x</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div style="margin-top:1.5rem; background:var(--bg-card); border:1px solid var(--border); padding:1.5rem; clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px));" class="reveal">
+          <p style="font-family:var(--font-mono); font-size:0.7rem; color:var(--text-muted); letter-spacing:1px; line-height:1.8;">
+            <span style="color:var(--accent);">// NOTE:</span> I'm not a full-time streamer or content creator.
+            Response times may vary between "surprisingly quick" and "oh right, I forgot to check."
+            Patience appreciated. Sarcasm also appreciated.
+          </p>
+        </div>
+      </div>
+
+      <!-- CONTACT FORM -->
+      <div class="contact-form-area">
+        <h3 class="reveal">SEND A MESSAGE</h3>
+        <p class="form-sub reveal">// All fields required unless your name is actually blank</p>
+
+        <div class="reveal">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name / Gamertag</label>
+              <input type="text" id="name" placeholder="e.g. xX_N00bSlayer_Xx">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="you@example.com">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">What's This About?</label>
+            <select id="subject">
+              <option value="" disabled selected>Pick a topic...</option>
+              <option value="general">General Hello / Chat</option>
+              <option value="collab">Collaboration / Play Together</option>
+              <option value="tech">Technical Issue / Bug Report</option>
+              <option value="feedback">Feedback / Suggestion</option>
+              <option value="other">Something Else Entirely</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" placeholder="Go on then, what's on your mind..."></textarea>
+          </div>
+
+          <button class="btn btn-primary" onclick="handleSubmit()" id="submitBtn">Send Message</button>
+
+          <div id="formFeedback" style="margin-top:1rem; font-family:var(--font-mono); font-size:0.75rem; display:none;"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">x_TAPTAP_x</div>
+  <p class="footer-tagline">AVERAGE GAMER. ABOVE AVERAGE VIBES.</p>
+  <ul class="footer-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
+  </ul>
+  <p class="footer-copy">&copy; 2026 x_TapTap_x. All rights reserved. No pros were harmed in the making of this site.</p>
+</footer>
+
+<script src="main.js"></script>
+<script>
+  function handleSubmit() {
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value.trim();
+    const feedback = document.getElementById('formFeedback');
+    const btn = document.getElementById('submitBtn');
+
+    if (!name || !email || !subject || !message) {
+      feedback.style.display = 'block';
+      feedback.style.color = 'var(--danger)';
+      feedback.textContent = '// ERROR: Please fill in all fields. Even the boring ones.';
+      return;
+    }
+
+    btn.textContent = 'Sending...';
+    btn.style.pointerEvents = 'none';
+    btn.style.opacity = '0.6';
+
+    // Simulate send — replace with actual form handler (Formspree, Netlify Forms, etc.)
+    setTimeout(() => {
+      feedback.style.display = 'block';
+      feedback.style.color = 'var(--accent)';
+      feedback.textContent = '// MESSAGE SENT. Nice one. I\'ll get back to you — probably.';
+      btn.textContent = 'Sent!';
+
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('subject').selectedIndex = 0;
+      document.getElementById('message').value = '';
+
+      setTimeout(() => {
+        btn.textContent = 'Send Message';
+        btn.style.pointerEvents = 'auto';
+        btn.style.opacity = '1';
+      }, 3000);
+    }, 1500);
+  }
+</script>
+</body>
+</html>
