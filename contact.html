@@ -4,32 +4,48 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact — x_TapTap_x</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+<meta name="description" content="Get in touch with x_TapTap_x via Discord, Twitch chat, Bluesky, TikTok, or the contact form below.">
+<meta name="theme-color" content="#0b0c14">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact — x_TapTap_x">
+<meta property="og:description" content="Get in touch with x_TapTap_x via Discord, Twitch chat, Bluesky, TikTok, or the contact form below.">
+<meta property="og:image" content="https://www.xtaptapx.com/itsyerman2.jpg">
+<meta property="og:url" content="https://www.xtaptapx.com/contact.html">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" sizes="256x256" href="/profile-small.png">
+<link rel="apple-touch-icon" href="/profile-small.png">
 </head>
 <body>
 
+<a href="#main" class="skip-link">Skip to content</a>
+
 <!-- NAV -->
 <nav id="navbar">
-  <a href="index.html" class="nav-brand">TAPTAP</a>
+  <a href="index.html" class="nav-brand">TAP<span>TAP</span></a>
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html" class="active">Contact</a></li>
     <li><a href="privacy.html">Privacy</a></li>
   </ul>
-  <button class="hamburger" id="hamburger" aria-label="Menu">
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
+<main id="main">
+
 <!-- PAGE HEADER -->
 <section class="page-header">
-  <div class="page-header-bg"></div>
-  <div class="page-header-grid"></div>
+  <div class="ambient" aria-hidden="true"></div>
   <div class="page-header-content">
-    <p class="section-label">// Contact</p>
-    <h1 class="section-title">GET IN<br><span style="color:var(--accent)">TOUCH</span></h1>
+    <p class="section-label">Contact</p>
+    <h1 class="section-title">GET IN<br><span style="color:var(--primary)">TOUCH</span></h1>
     <p class="page-header-sub">
       Want to say hello, ask a question, or challenge me to a 1v1? (Please don't do the last one.)
     </p>
@@ -52,50 +68,56 @@
           </p>
           <ul class="contact-methods">
             <li class="contact-method">
-              <div class="contact-method-icon">&#128225;</div>
+              <div class="contact-method-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.3 5.4A18 18 0 0 0 15.9 4l-.3.6a13.5 13.5 0 0 1 3.7 1.4 15 15 0 0 0-14.6 0A13.5 13.5 0 0 1 8.4 4.6L8.1 4a18 18 0 0 0-4.4 1.4C1 10 .3 14.5.6 18.9a18 18 0 0 0 5.5 2.7l1-1.6a11.6 11.6 0 0 1-1.9-.9c.2-.1.3-.3.5-.4a13 13 0 0 0 11 0l.5.4c-.6.4-1.2.6-1.9.9l1 1.6a18 18 0 0 0 5.5-2.7c.4-5.1-.9-9.5-2.5-13.5zM8.5 15.9c-.9 0-1.7-.9-1.7-1.9s.7-1.9 1.7-1.9 1.7.9 1.7 1.9-.8 1.9-1.7 1.9zm7 0c-.9 0-1.7-.9-1.7-1.9s.7-1.9 1.7-1.9 1.7.9 1.7 1.9-.8 1.9-1.7 1.9z"/></svg>
+              </div>
               <div>
                 <div class="contact-method-label">Discord</div>
                 <div class="contact-method-value">
-                  <a href="https://discord.gg/29JPRXPQ" target="_blank">discord.gg/29JPRXPQ</a>
+                  <a href="https://discord.gg/29JPRXPQ" target="_blank" rel="noopener">discord.gg/29JPRXPQ</a>
                 </div>
               </div>
             </li>
             <li class="contact-method">
-              <div class="contact-method-icon">&#9654;</div>
+              <div class="contact-method-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              </div>
               <div>
                 <div class="contact-method-label">Twitch</div>
                 <div class="contact-method-value">
-                  <a href="https://www.twitch.tv/x_taptap_x" target="_blank">twitch.tv/x_taptap_x</a>
+                  <a href="https://www.twitch.tv/x_taptap_x" target="_blank" rel="noopener">twitch.tv/x_taptap_x</a>
                 </div>
               </div>
             </li>
             <li class="contact-method">
-              <div class="contact-method-icon">&#9729;</div>
+              <div class="contact-method-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H7a4.5 4.5 0 0 1-1.5-8.7A5.5 5.5 0 0 1 16 8.2 4 4 0 0 1 17.5 19z"></path></svg>
+              </div>
               <div>
                 <div class="contact-method-label">Bluesky</div>
                 <div class="contact-method-value">
-                  <a href="https://bsky.app/profile/xtaptapx.com" target="_blank">@xtaptapx</a>
+                  <a href="https://bsky.app/profile/xtaptapx.com" target="_blank" rel="noopener">@xtaptapx</a>
                 </div>
               </div>
             </li>
             <li class="contact-method">
-              <div class="contact-method-icon">&#9836;</div>
+              <div class="contact-method-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 5.8a4.3 4.3 0 0 1-3-3.8h-3.1v13.6a2.6 2.6 0 1 1-2.6-2.6c.2 0 .5 0 .7.1V9.9a5.7 5.7 0 1 0 5 5.7V9.4a7.3 7.3 0 0 0 4.3 1.4V7.7a4.3 4.3 0 0 1-1.3-1.9z"/></svg>
+              </div>
               <div>
                 <div class="contact-method-label">TikTok</div>
                 <div class="contact-method-value">
-                  <a href="#" target="_blank">@x_taptap_x</a>
+                  <a href="https://www.tiktok.com/@xtaptapx" target="_blank" rel="noopener">@x_taptap_x</a>
                 </div>
               </div>
             </li>
           </ul>
         </div>
 
-        <div style="margin-top:1.5rem; background:var(--bg-card); border:1px solid var(--border); padding:1.5rem; clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px));" class="reveal">
-          <p style="font-family:var(--font-mono); font-size:0.7rem; color:var(--text-muted); letter-spacing:1px; line-height:1.8;">
-            <span style="color:var(--accent);">// NOTE:</span> I'm not a full-time streamer or content creator.
+        <div class="contact-note-card reveal">
+          <p><span class="highlight">// NOTE:</span> I'm not a full-time streamer or content creator.
             Response times may vary between "surprisingly quick" and "oh right, I forgot to check."
-            Patience appreciated. Sarcasm also appreciated.
-          </p>
+            Patience appreciated. Sarcasm also appreciated.</p>
         </div>
       </div>
 
@@ -104,21 +126,21 @@
         <h3 class="reveal">SEND A MESSAGE</h3>
         <p class="form-sub reveal">// All fields required unless your name is actually blank</p>
 
-        <div class="reveal">
+        <form class="reveal" id="contactForm" novalidate>
           <div class="form-row">
             <div class="form-group">
               <label for="name">Your Name / Gamertag</label>
-              <input type="text" id="name" placeholder="e.g. xX_N00bSlayer_Xx">
+              <input type="text" id="name" name="name" placeholder="e.g. xX_N00bSlayer_Xx" autocomplete="name" required>
             </div>
             <div class="form-group">
               <label for="email">Email Address</label>
-              <input type="email" id="email" placeholder="you@example.com">
+              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
             </div>
           </div>
 
           <div class="form-group">
             <label for="subject">What's This About?</label>
-            <select id="subject">
+            <select id="subject" name="subject" required>
               <option value="" disabled selected>Pick a topic...</option>
               <option value="general">General Hello / Chat</option>
               <option value="collab">Collaboration / Play Together</option>
@@ -130,22 +152,24 @@
 
           <div class="form-group">
             <label for="message">Your Message</label>
-            <textarea id="message" placeholder="Go on then, what's on your mind..."></textarea>
+            <textarea id="message" name="message" placeholder="Go on then, what's on your mind..." required></textarea>
           </div>
 
-          <button class="btn btn-primary" onclick="handleSubmit()" id="submitBtn">Send Message</button>
+          <button class="btn btn-primary" type="submit" id="submitBtn">Send Message</button>
 
-          <div id="formFeedback" style="margin-top:1rem; font-family:var(--font-mono); font-size:0.75rem; display:none;"></div>
-        </div>
+          <div id="formFeedback" class="form-feedback" role="status" aria-live="polite"></div>
+        </form>
       </div>
 
     </div>
   </div>
 </section>
 
+</main>
+
 <!-- FOOTER -->
 <footer>
-  <div class="footer-brand">x_TAPTAP_x</div>
+  <div class="footer-brand">x_TAP<span>TAP</span>_x</div>
   <p class="footer-tagline">AVERAGE GAMER. ABOVE AVERAGE VIBES.</p>
   <ul class="footer-links">
     <li><a href="about.html">About</a></li>
@@ -157,44 +181,36 @@
 
 <script src="main.js"></script>
 <script>
-  function handleSubmit() {
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value.trim();
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const form = e.target;
     const feedback = document.getElementById('formFeedback');
     const btn = document.getElementById('submitBtn');
 
-    if (!name || !email || !subject || !message) {
-      feedback.style.display = 'block';
-      feedback.style.color = 'var(--danger)';
+    if (!form.checkValidity()) {
+      form.reportValidity();
       feedback.textContent = '// ERROR: Please fill in all fields. Even the boring ones.';
+      feedback.className = 'form-feedback visible error';
       return;
     }
 
     btn.textContent = 'Sending...';
-    btn.style.pointerEvents = 'none';
-    btn.style.opacity = '0.6';
+    btn.disabled = true;
 
     // Simulate send — replace with actual form handler (Formspree, Netlify Forms, etc.)
     setTimeout(() => {
-      feedback.style.display = 'block';
-      feedback.style.color = 'var(--accent)';
       feedback.textContent = '// MESSAGE SENT. Nice one. I\'ll get back to you — probably.';
+      feedback.className = 'form-feedback visible success';
       btn.textContent = 'Sent!';
-
-      document.getElementById('name').value = '';
-      document.getElementById('email').value = '';
-      document.getElementById('subject').selectedIndex = 0;
-      document.getElementById('message').value = '';
+      form.reset();
 
       setTimeout(() => {
         btn.textContent = 'Send Message';
-        btn.style.pointerEvents = 'auto';
-        btn.style.opacity = '1';
+        btn.disabled = false;
       }, 3000);
-    }, 1500);
-  }
+    }, 1200);
+  });
 </script>
 </body>
 </html>
