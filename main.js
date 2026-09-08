@@ -39,3 +39,20 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Trailer play-on-click (video only loads once requested)
+const trailerPlayBtn = document.getElementById('trailerPlayBtn');
+if (trailerPlayBtn) {
+  trailerPlayBtn.addEventListener('click', () => {
+    const player = document.getElementById('trailerPlayer');
+    const video = document.createElement('video');
+    video.className = 'trailer-video';
+    video.src = 'video/trailer.mp4';
+    video.controls = true;
+    video.autoplay = true;
+    video.playsInline = true;
+    player.innerHTML = '';
+    player.appendChild(video);
+    video.focus();
+  });
+}
