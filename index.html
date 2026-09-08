@@ -4,41 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>x_TapTap_x — Average Gamer. Above Average Vibes.</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+  <meta name="description" content="x_TapTap_x is a 56-year-old Call of Duty streamer on Twitch. No esports contracts, no sponsors — just honest gameplay, a chill Discord, and above average vibes.">
+  <meta name="theme-color" content="#0b0c14">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="x_TapTap_x — Average Gamer. Above Average Vibes.">
+  <meta property="og:description" content="56 years old. Still rushing B. A Call of Duty streamer with no esports contracts incoming — just genuine gameplay and a good community.">
+  <meta property="og:image" content="https://www.xtaptapx.com/itsyerman2.jpg">
+  <meta property="og:url" content="https://www.xtaptapx.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="x_TapTap_x — Average Gamer. Above Average Vibes.">
+  <meta name="twitter:description" content="56 years old. Still rushing B. A Call of Duty streamer with no esports contracts incoming — just genuine gameplay and a good community.">
+  <meta name="twitter:image" content="https://www.xtaptapx.com/itsyerman2.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Standard favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/profile-small.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/profile-small.png">
-
-  <!-- Apple Touch Icon (iOS home screen) -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/profile-small.png">
-
-  <!-- Fallback .ico file -->
-  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="256x256" href="/profile-small.png">
+  <link rel="apple-touch-icon" href="/profile-small.png">
 </head>
 <body>
 
+<a href="#main" class="skip-link">Skip to content</a>
+
 <!-- NAV -->
 <nav id="navbar">
-  <a href="index.html" class="nav-brand">TAPTAP</a>
+  <a href="index.html" class="nav-brand">TAP<span>TAP</span></a>
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html" class="active">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html">Contact</a></li>
     <li><a href="privacy.html">Privacy</a></li>
   </ul>
-  <button class="hamburger" id="hamburger" aria-label="Menu">
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
+<main id="main">
+
 <!-- HERO -->
 <section class="hero" id="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-grid"></div>
+  <div class="ambient" aria-hidden="true"></div>
   <div class="hero-content">
-    <p class="hero-tag">// call of duty &bull; twitch &bull; vibes</p>
+    <p class="hero-tag">Call of Duty &middot; Twitch &middot; Vibes</p>
     <h1 class="hero-title">
       <span class="accent">x_TAPTAP_x</span><br>
       <span class="strike">PRO</span> AVERAGE GAMER
@@ -49,8 +61,11 @@
     </p>
     <p class="hero-disclaimer">*Results may vary. K/D ratio will not be discussed.</p>
     <div class="hero-buttons">
-      <a href="https://www.twitch.tv/x_taptap_x" target="_blank" class="btn btn-primary">&#9654; Watch Live</a>
-      <a href="https://discord.gg/29JPRXPQ" target="_blank" class="btn btn-outline">Join Discord</a>
+      <a href="https://www.twitch.tv/x_taptap_x" target="_blank" rel="noopener" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        Watch Live
+      </a>
+      <a href="https://discord.gg/29JPRXPQ" target="_blank" rel="noopener" class="btn btn-outline">Join Discord</a>
     </div>
   </div>
   <div class="scroll-indicator">
@@ -64,10 +79,10 @@
   <div class="container">
     <div class="about-grid">
       <div class="about-avatar">
-        <img src="./images/itsyerman2.jpg" alt="x_TapTap_x">
+        <img src="itsyerman2.jpg" alt="x_TapTap_x at his gaming setup" width="827" height="674" loading="eager" decoding="async">
       </div>
       <div class="about-text">
-        <p class="section-label reveal">// Who is TapTap?</p>
+        <p class="section-label reveal">Who is TapTap?</p>
         <h2 class="section-title reveal">THE PLAYER<br>BEHIND THE TAG</h2>
         <p class="reveal">
           I'm not a content creator by trade. I'm not chasing sponsors, brand deals, or a career in esports.
@@ -79,7 +94,7 @@
           and while my reflexes might have peaked somewhere around 2005,
           I make up for it with... well, enthusiasm. Mostly enthusiasm.
         </p>
-        <a href="about.html" class="btn btn-outline reveal" style="margin-top:1rem;">Read More</a>
+        <a href="about.html" class="btn btn-outline reveal" style="margin-top:0.5rem;">Read More</a>
         <div class="about-stats stagger-children">
           <div class="stat-box reveal">
             <div class="stat-number">232</div>
@@ -105,11 +120,13 @@
 <!-- FEATURES -->
 <section class="features" id="content">
   <div class="container">
-    <p class="section-label reveal">// What I do</p>
+    <p class="section-label reveal">What I do</p>
     <h2 class="section-title reveal">CONTENT &amp; STREAMS</h2>
     <div class="features-grid stagger-children">
       <div class="feature-card reveal">
-        <div class="feature-icon">&#127918;</div>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="8" width="20" height="9" rx="4"></rect><line x1="7" y1="10.5" x2="7" y2="14.5"></line><line x1="5" y1="12.5" x2="9" y2="12.5"></line><circle cx="16" cy="10.5" r="1"></circle><circle cx="18.5" cy="13" r="1"></circle></svg>
+        </div>
         <h3>LIVE STREAMS</h3>
         <p>
           Catch me live on Twitch taking on the Call of Duty universe.
@@ -119,7 +136,9 @@
         <p class="disclaimer">*Stream schedule is "whenever the mood strikes and the family doesn't need the bandwidth."</p>
       </div>
       <div class="feature-card reveal">
-        <div class="feature-icon">&#127916;</div>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5h18"></path><path d="m4 4 2 4.5"></path><path d="m9 4 2 4.5"></path><path d="m14 4 2 4.5"></path><rect x="3" y="8.5" width="18" height="11.5" rx="2"></rect></svg>
+        </div>
         <h3>CLIPS &amp; VIDEOS</h3>
         <p>
           Highlights, lowlights, and everything in between. Find the occasional video
@@ -129,7 +148,9 @@
         <p class="disclaimer">*"Highlights" is a generous term.</p>
       </div>
       <div class="feature-card reveal">
-        <div class="feature-icon">&#128172;</div>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+        </div>
         <h3>COMMUNITY</h3>
         <p>
           The best part isn't the gameplay — it's the people.
@@ -145,38 +166,46 @@
 <!-- SOCIAL HUB -->
 <section class="social-hub" id="socials">
   <div class="container">
-    <p class="section-label reveal">// Find me everywhere</p>
+    <p class="section-label reveal">Find me everywhere</p>
     <h2 class="section-title reveal">THE SOCIAL HUB</h2>
     <div class="social-grid stagger-children">
-      <a href="https://www.twitch.tv/x_taptap_x" target="_blank" class="social-card twitch reveal">
-        <div class="social-icon">&#9654;</div>
+      <a href="https://www.twitch.tv/x_taptap_x" target="_blank" rel="noopener" class="social-card twitch reveal">
+        <div class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        </div>
         <div class="social-info">
           <h3>TWITCH</h3>
-          <p class="social-handle">twitch.tv/x_taptap_x</p>
+          <span class="social-handle">twitch.tv/x_taptap_x</span>
           <p>Where the live action happens. Come hang out.</p>
         </div>
       </a>
-      <a href="https://www.youtube.com/@xTapTapx" target="_blank" class="social-card youtube reveal">
-        <div class="social-icon">&#9655;</div>
+      <a href="https://www.youtube.com/@xTapTapx" target="_blank" rel="noopener" class="social-card youtube reveal">
+        <div class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2s-.2-1.5-.8-2.1c-.8-.8-1.7-.8-2.1-.9C15.9 4 12 4 12 4h0s-3.9 0-6.7.2c-.4 0-1.3.1-2.1.9-.6.6-.8 2.1-.8 2.1S2.2 9 2.2 10.7v1.6C2.2 14 2.4 15.8 2.4 15.8s.2 1.5.8 2.1c.8.8 1.8.8 2.3.9 1.7.2 7.1.2 7.1.2s3.9 0 6.7-.3c.4 0 1.3-.1 2.1-.9.6-.6.8-2.1.8-2.1s.2-1.8.2-3.5v-1.6c0-1.7-.2-3.5-.2-3.5zM9.9 14.6V8.9l5.4 2.9-5.4 2.8z"/></svg>
+        </div>
         <div class="social-info">
           <h3>YOUTUBE</h3>
-          <p class="social-handle">x_TapTap_x</p>
+          <span class="social-handle">x_TapTap_x</span>
           <p>Clips, highlights, and the rare edited video.</p>
         </div>
       </a>
-      <a href="https://www.tiktok.com/@xtaptapx" target="_blank" class="social-card tiktok reveal">
-        <div class="social-icon">&#9836;</div>
+      <a href="https://www.tiktok.com/@xtaptapx" target="_blank" rel="noopener" class="social-card tiktok reveal">
+        <div class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 5.8a4.3 4.3 0 0 1-3-3.8h-3.1v13.6a2.6 2.6 0 1 1-2.6-2.6c.2 0 .5 0 .7.1V9.9a5.7 5.7 0 1 0 5 5.7V9.4a7.3 7.3 0 0 0 4.3 1.4V7.7a4.3 4.3 0 0 1-1.3-1.9z"/></svg>
+        </div>
         <div class="social-info">
           <h3>TIKTOK</h3>
-          <p class="social-handle">@x_taptap_x</p>
+          <span class="social-handle">@x_taptap_x</span>
           <p>Short clips that somehow get more views than my streams.</p>
         </div>
       </a>
-      <a href="https://bsky.app/profile/xtaptapx.com" target="_blank" class="social-card bluesky reveal">
-        <div class="social-icon">&#9729;</div>
+      <a href="https://bsky.app/profile/xtaptapx.com" target="_blank" rel="noopener" class="social-card bluesky reveal">
+        <div class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H7a4.5 4.5 0 0 1-1.5-8.7A5.5 5.5 0 0 1 16 8.2 4 4 0 0 1 17.5 19z"></path></svg>
+        </div>
         <div class="social-info">
           <h3>BLUESKY</h3>
-          <p class="social-handle">@xtaptapx</p>
+          <span class="social-handle">@xtaptapx</span>
           <p>Screenshots, hot takes, and general gaming chat.</p>
         </div>
       </a>
@@ -187,19 +216,24 @@
 <!-- DISCORD CTA -->
 <section class="discord-cta" id="community">
   <div class="container">
-    <div class="discord-badge reveal">&#128225; DISCORD SERVER</div>
+    <div class="discord-badge reveal">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.3 5.4A18 18 0 0 0 15.9 4l-.3.6a13.5 13.5 0 0 1 3.7 1.4 15 15 0 0 0-14.6 0A13.5 13.5 0 0 1 8.4 4.6L8.1 4a18 18 0 0 0-4.4 1.4C1 10 .3 14.5.6 18.9a18 18 0 0 0 5.5 2.7l1-1.6a11.6 11.6 0 0 1-1.9-.9c.2-.1.3-.3.5-.4a13 13 0 0 0 11 0l.5.4c-.6.4-1.2.6-1.9.9l1 1.6a18 18 0 0 0 5.5-2.7c.4-5.1-.9-9.5-2.5-13.5zM8.5 15.9c-.9 0-1.7-.9-1.7-1.9s.7-1.9 1.7-1.9 1.7.9 1.7 1.9-.8 1.9-1.7 1.9zm7 0c-.9 0-1.7-.9-1.7-1.9s.7-1.9 1.7-1.9 1.7.9 1.7 1.9-.8 1.9-1.7 1.9z"/></svg>
+      DISCORD SERVER
+    </div>
     <h2 class="section-title reveal">COME HANG OUT</h2>
     <p class="reveal">
       No clout required. No skill check at the door. Just a chill place for people
       who enjoy gaming, banter, and not taking themselves too seriously.
     </p>
-    <a href="https://discord.gg/29JPRXPQ" target="_blank" class="btn btn-primary reveal">Join the Discord</a>
+    <a href="https://discord.gg/29JPRXPQ" target="_blank" rel="noopener" class="btn btn-primary reveal">Join the Discord</a>
   </div>
 </section>
 
+</main>
+
 <!-- FOOTER -->
 <footer>
-  <div class="footer-brand">x_TAPTAP_x</div>
+  <div class="footer-brand">x_TAP<span>TAP</span>_x</div>
   <p class="footer-tagline">AVERAGE GAMER. ABOVE AVERAGE VIBES.</p>
   <ul class="footer-links">
     <li><a href="about.html">About</a></li>
