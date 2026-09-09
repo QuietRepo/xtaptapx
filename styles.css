@@ -430,9 +430,9 @@ section { padding: 6rem 1.5rem; position: relative; }
 .about-avatar {
   width: 100%;
   aspect-ratio: 1;
-  background: var(--card);
-  border: 1px solid var(--border);
+  background: radial-gradient(circle at 35% 25%, var(--primary-dim) 0%, var(--bg) 70%);
   border-radius: var(--radius-lg);
+  box-shadow: 0 0 0 4px var(--primary-glow), 0 24px 60px rgba(0,0,0,0.4);
   position: relative;
   overflow: hidden;
 }
@@ -441,11 +441,11 @@ section { padding: 6rem 1.5rem; position: relative; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: saturate(0.85);
+  mix-blend-mode: multiply;
+  filter: grayscale(1) brightness(1.08) contrast(1.08) sepia(0.35) hue-rotate(-12deg) saturate(1.6);
   transition: filter 0.5s var(--ease-out), transform 0.5s var(--ease-out);
 }
 .about-avatar:hover img {
-  filter: saturate(1);
   transform: scale(1.03);
 }
 
@@ -730,7 +730,8 @@ footer {
   width: 110px;
   height: 110px;
   border-radius: var(--radius-lg);
-  border: 1px solid var(--border);
+  background: radial-gradient(circle at 35% 25%, var(--primary-dim) 0%, var(--bg) 70%);
+  box-shadow: 0 0 0 4px var(--primary-glow), 0 12px 30px rgba(0,0,0,0.4);
   margin: 0 auto 1.5rem;
   overflow: hidden;
 }
@@ -738,10 +739,11 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: saturate(0.85);
+  mix-blend-mode: multiply;
+  filter: grayscale(1) brightness(1.08) contrast(1.08) sepia(0.35) hue-rotate(-12deg) saturate(1.6);
   transition: filter 0.5s var(--ease-out), transform 0.5s var(--ease-out);
 }
-.profile-avatar:hover img { filter: saturate(1); transform: scale(1.05); }
+.profile-avatar:hover img { transform: scale(1.05); }
 
 .profile-name {
   font-family: var(--font-display);
