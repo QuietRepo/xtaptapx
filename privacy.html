@@ -55,7 +55,7 @@
 <section class="privacy-content">
   <div class="privacy-body">
 
-    <span class="updated-date reveal">LAST UPDATED: MARCH 2026</span>
+    <span class="updated-date reveal">LAST UPDATED: OCTOBER 2026</span>
 
     <h3 class="reveal">OVERVIEW</h3>
     <p class="reveal">
@@ -109,6 +109,39 @@
       <li><strong>Analytics cookies:</strong> Help us understand site traffic and usage patterns</li>
       <li><strong>Third-party cookies:</strong> Set by embedded content from platforms like Twitch, YouTube, and Discord</li>
     </ul>
+
+    <h3 class="reveal">CHAT BOT (BRIAN)</h3>
+    <p class="reveal">
+      The Twitch and YouTube live chats of x_TapTap_x include an automated chat bot called Brian
+      (the "Brian Thebot" application). It runs on the channel owner's own server and works like this:
+    </p>
+    <ul class="reveal">
+      <li>It reads the public live chat of the channel's streams. That means chat usernames and message text,
+          which are already visible to everyone watching.</li>
+      <li>When someone addresses it (for example by typing @brian, !brian or !ask), it sends that message,
+          along with the last few lines of chat for context, to Anthropic's Claude AI service to write a short reply,
+          then posts the reply in chat.</li>
+      <li>It signs in only to its own dedicated YouTube account, which it uses to read chat and post replies.
+          It does not have access to your Google or YouTube account, and it cannot see your private data.</li>
+      <li>It does not build profiles of viewers and does not sell or share chat data for advertising.
+          Chat lines may appear briefly in the server's logs for troubleshooting, and those logs are rotated automatically.
+          The bot keeps only an internal counter of how much of its daily YouTube API allowance it has used.</li>
+    </ul>
+    <p class="reveal">
+      Please don't put anything private in live chat, as you wouldn't anywhere public. If you'd like
+      the bot to ignore you, or want something it said removed, get in touch via the
+      <a href="contact.html">contact page</a>.
+    </p>
+    <p class="reveal">
+      This application's use of the YouTube API Services means YouTube's
+      <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">Terms of Service</a>
+      and Google's
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> also apply.
+      Our use of information received from Google APIs adheres to the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>,
+      including the Limited Use requirements. Anthropic's handling of data sent to its service is described in
+      <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">its privacy policy</a>.
+    </p>
 
     <h3 class="reveal">THIRD-PARTY SERVICES</h3>
     <p class="reveal">
